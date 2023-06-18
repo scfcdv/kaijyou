@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>階乗</title>
+</head>
+<body>
+  <input type="number" id="number">
+  <button onclick="calculate()">計算</button>
+  <p id="result"></p>
+</body>
+<script>
+function calculate() {
+  var number = document.getElementById("number").value;
+  var result = 1;
+  for (var i = 1; i <= number; i++) {
+    result *= i;
+  }
+  document.getElementById("result").innerHTML = result;
+}
+</script>
+</html>
